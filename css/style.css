@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,200;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Montserrat:ital,wght@0,200;1,200;1,300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+ 
+}
+
+body{
+    font-family: 'Montserrat', sans-serif ,'Cormorant Garamond', serif;;
+   
+}
+
+
+/* utility classes */
+
+
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    box-sizing: border-box;
+    margin:0 auto;
+}
+
+
+.navbar-container .logo{
+    display: block;
+    border-radius:50% ;
+    /* color: #s57c3e; */
+}
+
+.navbar{
+    background-color: #f6b319;
+    height: 200px;
+    padding-top: 50px;
+    
+  
+}
+
+.name{
+    font-weight: bolder;
+    font-size: larger;
+    color: #557c3e;
+}
+
+
+.certified img{
+    display: inline-block;
+    width: 3%;
+    height: 3%;
+    padding-top: 5px;
+    
+    
+    
+}
+
+.restaurent-name{
+    transform: translate(21%,-190%);
+}
+
+.certified{
+    position: relative;
+}
+.kosher{
+    font-size: smaller;
+    font-weight: bold;
+    position: absolute;
+    top: 15px;
+    
+    
+    
+    
+}
+
+.ele{
+    display: flex;
+    list-style: none;
+    transform: translate(50%,-410%);
+    
+}
+
+.ele a{
+    padding-left: 2.5rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    text-align: center;
+    color: #61122f;
+}
+
+.ele a:hover{
+    color: whitesmoke;
+    
+    transition: 0.3s ease-in-out;
+
+}
+
+
+/* showcase */
+
+.showcase{
+    background-color: #61122f;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    width: 100%;
+}
+
+.showcase1{
+    padding-top: 2rem;
+}
+.imgbox img{
+    display: inline-block;
+    height: 600px;
+    width: 100%;
+    border-radius: 20px;
+    image-orientation: initial;
+    object-fit: cover;
+    border: 2px solid #3F0C1F;
+   
+}
+
+
+.showcase1 .imgc{
+    padding-top: 2.5rem;
+   
+}
+
+
+.showcase1,.showcase1text{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1rem;
+}
+.showcase1text .text span{
+    font-size: 20px;
+    font-weight: 900;
+}
+.imgc img{
+    display: inline-block;
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 2px solid #3F0C1F;
+ 
+    
+    object-position:center;
+    
+}
+
+.map p iframe{
+    border: 2px solid #3F0C1F;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.showcase1text a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #777;
+    font-weight: bolder;
+}
+
+.showcase1text a:hover{
+    color: whitesmoke;
+    transition: 0.3s ease-in-out;
+    
+}
+
+.specialcolor{
+    color: #557c3e;
+}
+
+/* footer */
+
+.bootom{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.5rem;
+    color: whitesmoke;
+    font-family: 'Oxygen','sans serif';
+  
+}
+
+.footer{
+    width: 100%;
+    background-color: #222;
+}
+
+.width{
+    width: 33.33%;
+}
+
+.footercontrol{
+    color: whitesmoke;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.timing h4,.address h4{
+    padding-top: 1rem;
+}
+
+
+
+/* menu styling */
+
+.menu-categories{
+    background-color: #61122f;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.menu-heading{
+    text-align: center;
+    color: whitesmoke;
+    padding-bottom: 2.5rem;
+    
+}
+
+.menu-heading h4{
+    transform: translateY(1rem);
+}
+
+
+.item img{
+    display: block;
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid #3F0C1F;
+
+}
+
+
+
+.item{
+
+    position: relative;
+}
+
+
+.menutext{
+    position: absolute;
+    transform: translate(4.5rem,-20px);
+    
+    font-size: 30px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    width: 300px;
+    
+}
+    
+.menu-items{
+    display: flex;
+    justify-content: space-evenly;
+} 
+
+
+
+.menutext1{
+    border: 2px solid #3F0C1F;
+    padding: 20px;
+    width: 259px;
+    transform: translateY(-44px);
+    background-color: #111;
+}
+
+.menutext a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.menutext a:hover{
+    color: #557c3e;
+    transition: all 0.3s ease-in-out;
+   
+}
+.menu-items{
+    padding: 0.5rem 0px;
+}
+
+
+
+/* About styling and awards styling */
+
+.about-info,.awards-info{
+    background-color: #61122f;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: whitesmoke;
+}
+
+
+.about-heading,.awards-heading{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.about p{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* Awards styling */
+
+.awards-discription{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Indie Flower', cursive;
+}
+
+
+.awards-img img{
+
+    display: block;
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid #3F0C1F;
+}
+
+.awards-img{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* testimonial styling */
+
+#testimonial{
+    background-color: #61122f;
+    color: whitesmoke;
+}
+
+#testimonials{
+
+    padding: 5rem 0rem;
+    background-color: #61122f;
+}
+
+.testimonial-title{
+  text-align: center;
+  font-size: 3rem;
+  font-weight:400;
+  color: whitesmoke;
+}
+
+.testimonial-container{
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+
+
+.testimonial-container .checked{
+  color: #ff9529;
+}
+
+.testimonial-box .testimonial-text{
+  margin: 1rem 0px;
+  color: whitesmoke;
+}
+
+.testimonial-box{
+  text-align: center;
+  padding: 1rem;
+}
+
+
+.customer-photo img{
+  display: block;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: auto;
+}
+
+
+
+.toggle,#click{
+    display: none;
+}
+
+
+
+
+
+/* #########################          responsive                  ####################################*/
+
+
+
+/* for larger than mobile device */
+
+
+@media(max-width:1101px) {
+
+
+    html{
+        font-size: 62.5%;
+    }
+    .restaurent-name{
+        transform: translate(25%,-200%);   
+    }
+
+   .imgc img,.imgc iframe{
+      
+      width: 250px;
+      height:200px ;
+       
+   }
+
+
+   .menu-items{
+       display: block;
+      transform: translateX(25%);
+   }
+}
+
+
+
+
+/* for mobile device */
+
+@media screen and (max-width:768px){
+
+   
+    
+    .certified{
+        display: none;
+    }
+    .restaurent-name{
+        display: flex;
+        flex-direction: column;
+        font-size: 90%;
+        transform: translate(6%,15%);
+        margin-top: 5px;
+        font-weight: bolder;
+    }
+
+   
+
+    .ele{
+        display: flex;
+        font-size: 80%;
+        margin-left: -150px;
+      
+    }
+
+    .imgbox img{
+
+        display: block;
+        width: 90%;
+        height: 80%;
+        transform: translateX(8%);
+    }
+
+   .showcase1{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+
+
+    
+}

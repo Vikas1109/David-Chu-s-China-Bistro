@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .navbar{
+    background-color: #111;
+    display: flex;
+    height: 80px;
+    align-items: center;
+    padding: 0 8rem;
+   
+  }
+
+  .logo{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 800;
+  }
+  .menu{
+    list-style: none;
+    display: flex;
+    margin: 0 20rem;
+    
+  }
+  .menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 0 1rem;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 12px;
+    border-radius: 5px;
+    text-align: right;
+  }
+
+  .menu a:hover{
+    background-color: crimson;
+
+  }
+  .navbar .menu-btn i{
+    color: #fff;
+    cursor: pointer;
+  }
+
+  #click,.menu-btn{
+    display: none;
+  }
+ 
+ @media screen and (max-width:768px) {
+
+  .menu{
+    display: block;
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background-color: #111;
+    height: 50vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .menu li{
+    padding-top: 1.5rem;
+  }
+   
+  .menu-btn{
+    display: block;
+  }
+
+  .navbar{
+    position: relative;
+  }
+  .menu-btn{
+    position: absolute;
+    right: 10%;
+  }
+  #click:checked ~ .menu{
+    left: 0;
+    transition: all 0.5s ease-in-out;
+  }
+ 
+  #click:checked ~ .menu-btn i::before{
+    content: "\f00d";
+  }
+ }
+</style> 
+<body>
+  
+  <nav class="navbar">
+    <div class="logo">Brand</div>
+    <input type="checkbox" name="" id="click">
+
+    <label for="click" class="menu-btn">
+
+      <i class="fas fa-bars fa-2x"></i>
+    </label>
+
+    <ul class="menu">
+      <li><a href="">home</a></li>
+      <li><a href="">about</a></li>
+      <li><a href="">feedback</a></li>
+      <li><a href="">contact</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
